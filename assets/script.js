@@ -33,14 +33,38 @@ const horizontalScroll = ScrollTrigger.create({
 });
 
 // total scroll amount divided by the total distance that the sections move gives us the ratio we can apply to the pointer movement so that it fits.
-var dragRatio = scrollContainer.offsetWidth / (window.innerWidth * (sections.length - 1));
-var drag = Draggable.create(".proxy", {
-    trigger: scrollContainer,
-    type: "x",
-    onPress() {
-        this.startScroll = horizontalScroll.scroll();
-    },
-    onDrag() {
-        horizontalScroll.scroll(this.startScroll - (this.x - this.startX) * dragRatio);
-    }
-})[0];
+
+// var dragRatio = scrollContainer.offsetWidth / (window.innerWidth * (sections.length - 1));
+// console.log(dragRatio);
+// var drag = Draggable.create(".proxy", {
+//     trigger: scrollContainer,
+//     type: "x",
+//     onPress() {
+//         this.startScroll = horizontalScroll.scroll();
+//     },
+//     onDrag() {
+//         horizontalScroll.scroll(this.startScroll - (this.x - this.startX) * dragRatio);
+//     }
+// })[0];
+
+
+
+
+// TEST
+
+// gsap.registerPlugin(ScrollTrigger);
+// var allSections = document.querySelectorAll('.block');
+
+// gsap.to(allSections, {
+//     xPercent: -100 * (allSections.length - 1),
+//     ease: "none",
+//     scrollTrigger: {
+//       trigger: ".horizontal-container",
+//       pin: true,
+//       start: "top top",
+//       scrub: 1,
+//       snap: false,
+//       // base vertical scrolling on how wide the container is so it feels more natural.
+//       end: () => "+=" + document.querySelector(".horizontal-container").offsetWidth
+//     }
+//   });
