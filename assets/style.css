@@ -1,4 +1,4 @@
-*{
+/* *{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -51,11 +51,11 @@ body{
   visibility: hidden;
 }
 
-/* .horizontal-container {
+.horizontal-container {
   width: 300%;
   height: 100%;
   display: flex;
-  /* flex-wrap: nowrap; */
+  flex-wrap: nowrap;
   max-width: none;
   }
 
@@ -68,3 +68,54 @@ body{
   width: 100%;
   will-change: transform;
 } */
+
+
+
+
+/* TEST2 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 50px;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+}
+
+.wraper{
+  overflow-x: hidden;
+}
+
+div{
+  position: relative;
+}
+
+.container{
+  min-width: 5000px;
+  height: 100vh;
+  background-color: #FF6F61;
+}
+
+.other{
+  width: 100vw;
+  height: 500px;
+  background-color: #1663c7;
+}
+
+.container p{
+  /* position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%); */
+}
+
+.other p{
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
