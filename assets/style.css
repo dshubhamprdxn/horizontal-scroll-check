@@ -95,7 +95,7 @@ div{
 }
 
 .container{
-  /* min-width: 5000px; */
+  width: 5000px;
   height: 100vh;
   background-color: #FF6F61;
 }
@@ -107,10 +107,10 @@ div{
 }
 
 .container p{
-  /* position: absolute;
+  position: absolute;
   top: 50%;
   left: 3%;
-  transform: translateY(-50%); */
+  transform: translateY(-50%);
 }
 
 .other p{
