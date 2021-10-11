@@ -95,7 +95,7 @@ div{
 }
 
 .container{
-  min-width: 5000px;
+  /* min-width: 5000px; */
   height: 100vh;
   background-color: #FF6F61;
 }
